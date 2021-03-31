@@ -4,57 +4,64 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
-        <div class="container">
+        <div style="position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: -50px;
+        margin-left: -100px;">
             <div class="row">
-              <div class="col-sm">
-                <input type="number" class="form-control" id="angka1">    
+              <div class="col-sm-10">
+                <input type="number" class="form-control form-control-sm" id="angka1">    
               </div>
-              <div class="col-sm">
-                <input class="form-check-input checkbox" type="checkbox" value="" id="check1">
+              <div class="col-sm-2">
+                <input class="form-check-input checkbox my-2" type="checkbox" value="" id="check1">
               </div>
             </div>
-            <div class="row">
-                <div class="col-sm">
-                  <input type="number" class="form-control" id="angka2">    
+            <div class="row my-3">
+                <div class="col-sm-10">
+                  <input type="number" class="form-control form-control-sm" id="angka2">    
                 </div>
-                <div class="col-sm">
-                  <input class="form-check-input checkbox" type="checkbox" value="" id="check2">
+                <div class="col-sm-2">
+                  <input class="form-check-input checkbox my-2" type="checkbox" value="" id="check2">
                 </div>
               </div>
               <div class="row">
-                <div class="col-sm">
-                  <input type="number" class="form-control" id="angka3">    
+                <div class="col-sm-10">
+                  <input type="number" class="form-control form-control-sm" id="angka3">    
                 </div>
-                <div class="col-sm">
-                  <input class="form-check-input checkbox" type="checkbox" value="" id="check3">
+                <div class="col-sm-2">
+                  <input class="form-check-input checkbox my-2" type="checkbox" value="" id="check3">
                 </div>
               </div> 
-              <div class="row">
-                <div class="col-sm">
-                    <button type="button" class="btn btn-primary" id="tambah">+</button>
+              <div class="row my-3 justify-content-center">
+                <div class="col"> 
+                    <button type="button btn-sm btn-block" class="btn btn-primary " id="tambah">+</button>
                 </div>
-                <div class="col-sm">
-                    <button type="button" class="btn btn-primary" id="kurang">-</button>
+                <div class="col">
+                    <button type="button btn-sm btn-block" class="btn btn-primary" id="kurang">-</button>
                 </div>
-                <div class="col-sm">
-                    <button type="button" class="btn btn-primary" id="kali">x</button>
+                <div class="col">
+                    <button type="button btn-sm btn-block" class="btn btn-primary" id="kali">x</button>
                 </div>
-                <div class="col-sm">
-                    <button type="button" class="btn btn-primary" id="bagi">/</button>
+                <div class="col">
+                    <button type="button btn-sm btn-block" class="btn btn-primary" id="bagi">/</button>
                 </div>  
               </div> 
               <hr>
-              <div class="row">
-                <div class="col-sm">
+              <div class="row justify-content-between">
+                <div class="col-sm-3 my-1">
                   Hasil : 
                 </div>
-                <div class="col-sm">
-                    <input type="text" class="form-control" id="hasil">   
+                <div class="col-sm-3">
+                    <input type="text" class="form-control form-control-sm" id="hasil" disabled>   
                 </div>
               </div> 
           </div>
     </body>
     <script>
+        function getData(){
+
+        }
         $(document).ready(function(){
             $('#tambah').on('click',function(){
                 let check1 =  $('#check1').is(":checked");
