@@ -96,6 +96,8 @@
                 let groupcek = $('.checkbox').filter(':checked').length;
                if(groupcek <= 1){
                 alert('Silahkan pilih minimal 2 angka');
+               }else if((!angka1 && check1) || (!angka2 && check2) || (!angka3 && check3)){
+                alert('Isi angka terlebih dahulu');
                }else{
                     if(check1){
                         hasil = parseInt(angka1);
